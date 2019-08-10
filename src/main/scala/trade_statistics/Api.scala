@@ -1,4 +1,4 @@
-package com.github.kusaeva
+package trade_statistics
 
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.model.headers.BasicHttpCredentials
@@ -6,12 +6,12 @@ import akka.http.scaladsl.server.Route
 import akka.http.scaladsl.server.Directives._
 import akka.http.scaladsl.server.directives._
 
-import json.JsonSupport
+import json.DomainJsonSupport
 import domain.Transaction
 import service.TransactionService
 import repository.SimpleRepository
 
-class Api extends JsonSupport {
+class Api extends DomainJsonSupport {
   val validCredentials = BasicHttpCredentials("John", "p4ssw0rd")
 
   val service = TransactionService(SimpleRepository)

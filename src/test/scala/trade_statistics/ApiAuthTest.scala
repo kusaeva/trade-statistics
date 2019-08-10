@@ -1,4 +1,4 @@
-package com.github.kusaeva
+package trade_statistics
 
 import akka.http.scaladsl.model.StatusCodes
 import akka.http.scaladsl.model.headers.{BasicHttpCredentials, HttpChallenge, `WWW-Authenticate`}

@@ -1,7 +1,6 @@
-package com.github.kusaeva
+package trade_statistics
 
 import akka.http.scaladsl.model.{HttpEntity, HttpMethods, HttpRequest, MediaTypes, StatusCodes}
-import akka.http.scaladsl.model.headers.{BasicHttpCredentials, HttpChallenge, `WWW-Authenticate`}
 import akka.util.ByteString
 import domain.{Buy, Ticker, TradingPair, Transaction}
 

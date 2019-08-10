@@ -5,7 +5,7 @@ import spray.json._
 
 import domain.{Buy, Fee, FixedFee, PercentFee, Sell, Side, Ticker, Transaction, TradingPair}
 
-trait JsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
+trait DomainJsonSupport extends SprayJsonSupport with DefaultJsonProtocol {
   implicit val tickerFormat = jsonFormat1(Ticker)
   implicit val tradingPair  = jsonFormat2(TradingPair)
 

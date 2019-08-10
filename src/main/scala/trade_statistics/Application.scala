@@ -1,4 +1,4 @@
-package com.github.kusaeva
+package trade_statistics
 
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http

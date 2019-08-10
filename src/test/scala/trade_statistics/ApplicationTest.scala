@@ -1,4 +1,4 @@
-package com.github.kusaeva
+package trade_statistics
 
 import org.scalatest.{Matchers, WordSpec}
 import com.softwaremill.sttp._
